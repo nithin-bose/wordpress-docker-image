@@ -1,4 +1,4 @@
-FROM wordpress:4.8.1-php7.1-apache
+FROM wordpress:php7.1-apache
 
 # Add PHP Zip Archive extension
 RUN apt-get update \
