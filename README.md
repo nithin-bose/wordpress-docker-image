@@ -10,4 +10,5 @@ memory_limit = 128M
 upload_max_filesize = 64M
 post_max_size = 64M
 max_execution_time = 1800
+default_socket_timeout = 360
 ```
