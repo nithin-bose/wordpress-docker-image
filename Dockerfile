@@ -7,3 +7,4 @@ RUN apt-get update \
     && docker-php-ext-install zip
 
 COPY uploads.ini /usr/local/etc/php/conf.d/
+COPY wp-config-sample.php /usr/src/wordpress/
