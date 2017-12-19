@@ -1,0 +1,18 @@
+version: "2"
+services:
+  mariadb:
+    image: mariadb
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql-password
+
+  wordpress:
+    image: nithinbose/wordpress
+    restart: unless-stopped
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_PASSWORD: mysql-password
+    depends_on:
+      - mariadb
+    ports:
+      - 80:80
