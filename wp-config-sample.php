@@ -92,5 +92,8 @@ define('WP_POST_REVISIONS', 3);
 define('WP_MEMORY_LIMIT', '96M');
 define('WP_MAX_MEMORY_LIMIT', '256M');
 
+/** Disable wordpress cron */
+define('DISABLE_WP_CRON', true);
+
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

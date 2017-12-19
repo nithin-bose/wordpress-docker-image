@@ -20,4 +20,7 @@ Extending the official [wordpress image](https://github.com/docker-library/wordp
   /** Memory settings */
   define('WP_MEMORY_LIMIT', '96M');
   define('WP_MAX_MEMORY_LIMIT', '256M');
+
+  /** Disable wordpress cron */
+  define('DISABLE_WP_CRON', true);
   ```
