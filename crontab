@@ -1,5 +1,5 @@
 # Sometimes it might be required to run PHP directly:
-#*/5 * * * * php /var/www/html/wp-cron.php
+#*/5 * * * * root php /var/www/html/wp-cron.php
 
 # You can also do it using curl:
-*/5 * * * * curl -vs -o /dev/null http://127.0.0.1/wp-cron.php > /dev/null 2>&1
+*/5 * * * * root curl -vs -o /dev/null http://127.0.0.1/wp-cron.php > /dev/null 2>&1
